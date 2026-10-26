@@ -18,7 +18,7 @@ The goal of the algorithm is to find a set of paramenters (weights) that better 
 #### Training Funcions:
 + sigmoid(z) - takes a numpy array or a scalar and computes its sigmoid
 + h(model, x) - returns the sigmoid of the matrix product of the model matrix and the input (x), representing the predicted probabilities
-+ get_gradient(model,x,y) - commputes the gradient od the cross entropy loss funtion of the updated model
++ get_gradient(model,x,y) - commputes the gradient of the cross entropy loss funtion of the updated model
 + entropy_loss(model,x,y) - computes the cross entropy loss function of the updated model
 + cost(prev_model, model) - computes the difference between the cross entropy loss function of the previous model and the updated one.
 + log_reg_model(x,y,alpha=0.01,min=0.0001) - Initializes and trains a logistics regression model by iteratively updating weights using the gradient descent method. The loop is interrupted when 10000 iterations are completed or when the cost function returns a value smaller than min (default value=0.0001)** and the function returns a numpy array with the weights that correspond to the Logistic Regression model.
